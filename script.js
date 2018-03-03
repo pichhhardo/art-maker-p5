@@ -1,1 +1,1 @@
-console.log('hi');
+console.log("This line of code displays a message (this message!!) in the browser console. Hello ");
