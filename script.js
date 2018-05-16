@@ -4,4 +4,8 @@
 //    3) the result that you see in the live web page (click "Show Live" in Glitch to see the actual web page)
 
 
-document.body.textContent = "This JS code will replace all the text of the body element in the HTML file!";
+// Our code in the last challenge looked like this:
+// document.body.textContent = "This JS code will replace ALL the text in the body element of the HTML file!";
+
+
+document.getElementById("special").textContent = "This JS code will replace all the text inside just ONE paragraph.";
