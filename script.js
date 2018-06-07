@@ -12,20 +12,13 @@ console.log("Howdy, I'm Steve.! I actually hold the title of Software Developer 
 console.log("Hi, I'm June! I'm a technical writer trying to get more familiar with code.");
 
 
-  Me too - June
 
-
-dfgdfg
-
-
-hi!
-dfgdfg
-
+console.log("test");
 
 console.log("Hi, I'm Ruby! I'm a product designer, artist, and earth lover. :)");
 
-console.log("Hi! I am Marla  I am a film editor wanting to learn something new!  Have web app ideas to pursue  :-) ;
+console.log("Hi! I am Marla  I am a film editor wanting to learn something new!  Have web app ideas to pursue  :-)" ) ;
 
-console.log("Hi I'm Nicole! I want to make fun interactive webpages");
+console.log("Hi I'm Nicole! I want to make fun interactive webpages"); // NICOLENICOLENICOLE
 
-sole.log("Hi, I'm Carmen! I'm new to coding and wish to learn more!. :)");
+console.log("Hi, I'm Carmen! I'm new to coding and wish to learn more!. :)");
