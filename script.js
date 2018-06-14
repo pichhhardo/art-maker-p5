@@ -5,12 +5,23 @@
 
 // EXAMPLE CODE TO COPY-PASTE -- introduce yourself! :)
 
-console.log("Liz - hi!");
+console.log("Liz - hi!  ");
 
+console.log("ali - ux designer - from Istanbul - Novice Coder")
 
+console.log("blair - hey!");
 
+console.log("Meg - hello!");
 
+console.log ("June - Hiyeee!);
 
+console.log("Kim, here and present.");
 
+console.log("Hola everyone I am OMAR");
 
+console.log ("xio- hello!!!!");
 
+             
+             
+             
+             
