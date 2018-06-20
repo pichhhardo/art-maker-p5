@@ -10,14 +10,7 @@ function setup() {
   createCanvas(500, 500);
   
   
-  // EXAMPLE CODE -- Draw a square and then draw the text "Liz"
-  rect(100, 30, 50, 50);
-  text("Liz", 100, 30);
-
-  // Copy the two lines of example code above, then paste it below, and change it to say your name!
-  
-  
-  
+  // Create some drawings right here! :)
   
   
   
@@ -28,7 +21,7 @@ function setup() {
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
     
-  // When we animate our drawings, we'll do this in here!
+  // When we animate our drawings, we'll do it in here!
   
   
 }
