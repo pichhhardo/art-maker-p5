@@ -2,6 +2,9 @@
 //    Comments are ignored by the computer; they're great for writing notes to yourself!
 
 
+let squareWidt
+let xPos = 0;
+let yPos = 0;
 
 // The code inside the setup function will run ONLY ONCE when you open the web page
 function setup() {
@@ -14,6 +17,7 @@ function setup() {
   
   
 
+  rect(400, 350, squareWidth, squareWidth);
   
 }
 
