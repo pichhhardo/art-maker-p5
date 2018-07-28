@@ -17,8 +17,8 @@ function setup() {
   // to draw some stuff once when the page loads.
 
   
-  
-  
+
+
 
   ////////////////////////////////////////////////////////////////////////////////////////////////
 }  // end of setup() function
@@ -32,7 +32,28 @@ function draw() {
   // Include your code here inside the draw() function
   // to draw stuff OVER AND OVER again, creating an animation!
   
-  
+  let counter = 0;
+
+  while (  counter < 100   ) {
+
+    let x = random(0, 500);
+    let y = random(0, 500);
+    
+    let w = random(0, 50);
+    let h = random(0, 50);
+    
+    let r = random(0, 500);
+    let g = random(0, 500);
+    let b = random(0, 500);
+    
+    
+    fill(r, g, b);
+    
+    rect(x,y,w,h);
+    
+    
+    counter++;
+  }
   
   
   
