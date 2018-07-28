@@ -1,6 +1,4 @@
-//    NOTE: these lines that start with two slashes are called COMMENTS.
-//    Comments are ignored by the computer; they're great for writing notes to yourself!
-
+console.log("if you see this message in the console, then we know this JavaScript file is running!");
 
 // The code inside the setup function will run ONLY ONCE when you open the web page
 function setup() {
@@ -8,18 +6,39 @@ function setup() {
   // The createCanvas function creates a <canvas> element on the page after it loads, which lets us draw stuff!
   createCanvas(500, 500);
   
-  // Draw some stuff here!
+  // Fix for retina displays where clear() only clears the top left corner of the canvas)
+  pixelDensity(1);
+
+  // 2 frames per second -- slow animation to more easily see what's happening on each frame
+  frameRate(2);
+    
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  // Include your code here inside the setup() function
+  // to draw some stuff once when the page loads.
+
   
   
-   
-}
+  
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+}  // end of setup() function
 
 
 
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
-    
-  // Later we'll draw stuff in here to animate it!
   
-}
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  // Include your code here inside the draw() function
+  // to draw stuff OVER AND OVER again, creating an animation!
+  
+  
+  
+  
+  
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  
+
+}  // end of draw() function
 
