@@ -11,7 +11,7 @@ function preload() {
   // Load a sound file
   snareDrum = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/snare_drum.wav');
   bassDrum = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/bass_drum.wav');
-  cymbal = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/cymbal.wav');
+  cymbal = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/mid_tom.wav');ccccc
   
 }
 
