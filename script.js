@@ -1,8 +1,7 @@
 console.log("if you see this message in the console, then we know this JavaScript file is running!");
 
-
-// Create a new oscillator -- this lets us synthesize our own sounds!
-let osc = new p5.Oscillator();
+// Create a new instance of the p5js microphone input
+let mic = new p5.AudioIn();
 
 
 // The code inside the setup function will run ONLY ONCE when you open the web page
@@ -14,36 +13,27 @@ function setup() {
   frameRate(60);
     
 
-  // Set the type of sound wave
-  osc.setType('sine');
-  
-  // Set the frequency
-  osc.freq(200);
-  
-  // Set the amplitude (basically, the volume) -- somewhere between 0 and 1
-  osc.amp(0.3);
-  
-  // Play the sound!
-  osc.start();
+  // Start receiving the microphone audio input
+  mic.start();
 
   
   ////////////////////////////////////////////////////////////////////////////////////////////////
 }  // end of setup() function
 
 
-// This p5js function runs when the user clicks their mouse
-function mouseClicked() {
-  // Stop playing the sound!
-  osc.stop();
-}
-
-
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
+  // Clear the screen before drawing each next frame
+  clear();
   
-
+  // Get the volume level from the microphone (value is between 0 and 1)
+  let vol = mic.getLevel();
   
+  // Map the mic volume to a y-coordinate somewhere between 0 and the height of the drawing canvas
+  let yPosition = map(vol, 0, 1, height, 0);
   
+  // Draw a circle and move it up based on the volume (using the mapped yPosition variable):
+  ellipse(width/2, yPosition - 25, 100, 100);
   
 }  // end of draw() function
 
