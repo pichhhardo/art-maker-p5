@@ -31,7 +31,6 @@ function setup() {
 function draw() {
   
 
-  rect(mouseX, 300, 50, 100);
   
   
   
