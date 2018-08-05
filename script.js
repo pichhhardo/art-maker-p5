@@ -9,8 +9,8 @@ function setup() {
   // Fix for retina displays where clear() only clears the top left corner of the canvas)
   pixelDensity(1);
 
-  // 2 frames per second -- slow animation to more easily see what's happening on each frame
-  frameRate(2);
+  // 60 frames per second
+  frameRate(60);
     
   ////////////////////////////////////////////////////////////////////////////////////////////////
   // Include your code here inside the setup() function
@@ -31,7 +31,7 @@ function setup() {
 function draw() {
   
 
-  
+  rect(mouseX, 300, 50, 100);
   
   
   
