@@ -1,9 +1,15 @@
 console.log("if you see this message in the console, then we know this JavaScript file is running!");
 
-// Create a new instance of the p5js microphone input
-let mic = new p5.AudioIn();
+// Create a global variable so we can access it in all of our functions
+let snareDrum;
+let bassDrum;
 
-let sound;
+// The preload function is required to load things before the page is ready to interact with the user
+function preload() {
+  // Load a sound file
+  snareDrum = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/snare_drum.wav');
+  bassDrum = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/bass_drum.wav');
+}
 
 // The code inside the setup function will run ONLY ONCE when you open the web page
 function setup() {
@@ -12,15 +18,9 @@ function setup() {
   createCanvas(500, 500);
   pixelDensity(1);
   frameRate(60);
-    
-
-  // Start receiving the microphone audio input
-  mic.start();
-
   
-  // Load a sound file
-  sound = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/snare_drum.wav');
-  sound.loop();
+
+
   
   ////////////////////////////////////////////////////////////////////////////////////////////////
 }  // end of setup() function
@@ -31,14 +31,25 @@ function draw() {
   // Clear the screen before drawing each next frame
   clear();
   
-  // Get the volume level from the microphone (value is between 0 and 1)
-  let vol = mic.getLevel();
   
-  // Map the mic volume to a y-coordinate somewhere between 0 and the height of the drawing canvas
-  let yPosition = map(vol, 0, 1, height, 0);
+  if (keyCode === LEFT_ARROW) {
+    // Play the snare drum sound file
+    snareDrum.play();
+    
+  } else if (keyCode === RIGHT_ARROW) {
+    
+    // Play the bass drum sound file
+    bassDrum.play();
+    
+  } else if (keyCode === RIGHT_ARROW) {
+    
+    // Play the bass drum sound file
+    bassDrum.play();
+    
+  }
+  // ..... you can keep chaining more else ifs to play different sounds based on which key the user pressed!
   
-  // Draw a circle and move it up based on the volume (using the mapped yPosition variable):
-  ellipse(width/2, yPosition - 25, 100, 100);
+
   
 }  // end of draw() function
 
