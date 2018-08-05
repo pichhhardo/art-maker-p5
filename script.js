@@ -3,6 +3,7 @@ console.log("if you see this message in the console, then we know this JavaScrip
 // Create a new instance of the p5js microphone input
 let mic = new p5.AudioIn();
 
+let sound;
 
 // The code inside the setup function will run ONLY ONCE when you open the web page
 function setup() {
@@ -16,6 +17,10 @@ function setup() {
   // Start receiving the microphone audio input
   mic.start();
 
+  
+  // Load a sound file
+  sound = loadSound('https://raw.githubusercontent.com/siggy/beatboxer/master/sounds/snare_drum.wav');
+  sound.loop();
   
   ////////////////////////////////////////////////////////////////////////////////////////////////
 }  // end of setup() function
