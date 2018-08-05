@@ -14,12 +14,26 @@ function setup() {
     
   ////////////////////////////////////////////////////////////////////////////////////////////////
   // Include your code here inside the setup() function
-  // to draw some stuff once when the page loads.
+  // to do something once when the page loads.
   ////////////////////////////////////////////////////////////////////////////////////////////////
-  // *** YOUR CODE HERE: ***
 
 
+  // Create a new oscillator -- this lets us synthesize our own sounds!
+  let osc = new p5.Oscillator();
+  
+  // Set the type of sound wave
+  osc.setType('sine');
+  
+  // Set the frequency
+  osc.freq(200);
+  
+  // Set the amplitude (basically, the volume) -- somewhere between 0 and 1
+  osc.amp(0.3);
+  
+  // Play the sound!
+  osc.start();
 
+  
   ////////////////////////////////////////////////////////////////////////////////////////////////
 }  // end of setup() function
 
