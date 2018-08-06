@@ -40,10 +40,10 @@ function keyTyped() {
     // Play the bass drum sound file
     bassDrum.play();
     
-  } else if (key === 'c') {
+  /**/} else if (key === 'c') {
     
     // Play the cymbal sound file
-    hihat.play(PI);
+    hihat.play();
     
 
     
@@ -65,12 +65,19 @@ function keyTyped() {
 
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
+  if (key === 'c') {
+    // Play the snare drum sound file
+    hihat.play();
+    
+  
   fill(random(25),random(-10000,10000),random(255));
  // clear();
   ellipse(random(500),random(700), 25,25);
   
   // You could also draw something here if you want :)
 
-  
+  } else if (key === 'c') {
+    // Play the snare drum sound file
+    hihat.play();
 }  // end of draw() function
 
