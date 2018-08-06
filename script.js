@@ -21,7 +21,7 @@ function setup() {
   // Setup code from before, for drawings/animations:
   createCanvas(500, 500);
   pixelDensity(1);
-  frameRate(PI)
+  frameRate(60)
   
 
   ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -76,8 +76,6 @@ function draw() {
   
   // You could also draw something here if you want :)
 
-  } else if (key === 'c') {
-    // Play the snare drum sound file
-    hihat.play();
-}  // end of draw() function
+  }   // end of draw() function
 
+}
