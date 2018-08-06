@@ -44,14 +44,12 @@ function keyTyped() {
     
     // Play the cymbal sound file
     hihat.play();
-    hihat.loop();
-    clear();
+    hihat.loop(3);
+    
   }
   // ..... you can keep chaining more else ifs to play different sounds based on which key the user pressed!
-  
-  
-}//end keyPressed() function
 
+}//end keyPressed() function
 /*function trapSnare(){
    
   if (key=== 'c'){
@@ -63,7 +61,9 @@ function keyTyped() {
 
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
-
+  fill(random(25),random(555),random(255));
+  ellipse(random(500),random(700), 25,25);
+  clear();
   // You could also draw something here if you want :)
 
   
