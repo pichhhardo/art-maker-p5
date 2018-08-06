@@ -49,7 +49,7 @@ function keyTyped() {
     
   } else if (key==='s'){
   hihat.play();
-    //keyPressed()
+    
   }
   // ..... you can keep chaining more else ifs to play different sounds based on which key the user pressed!
 
