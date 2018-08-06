@@ -21,7 +21,7 @@ function setup() {
   // Setup code from before, for drawings/animations:
   createCanvas(500, 500);
   pixelDensity(1);
-  frameRate(60);
+  frameRate(60)
   
 
   ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,8 +44,12 @@ function keyTyped() {
     
     // Play the cymbal sound file
     hihat.play();
-    hihat.loop(3);
+    key.loop(3);
+
     
+  } else if (key==='s'){
+  hihat.play();
+    //keyPressed()
   }
   // ..... you can keep chaining more else ifs to play different sounds based on which key the user pressed!
 
@@ -62,8 +66,9 @@ function keyTyped() {
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
   fill(random(25),random(555),random(255));
+ // clear();
   ellipse(random(500),random(700), 25,25);
-  clear();
+  
   // You could also draw something here if you want :)
 
   
