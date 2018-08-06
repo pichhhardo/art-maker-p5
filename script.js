@@ -21,7 +21,7 @@ function setup() {
   // Setup code from before, for drawings/animations:
   createCanvas(500, 500);
   pixelDensity(1);
-  frameRate(60)
+  frameRate(PI)
   
 
   ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,8 +43,8 @@ function keyTyped() {
   } else if (key === 'c') {
     
     // Play the cymbal sound file
-    hihat.play();
-    key.loop(3);
+    hihat.play(PI);
+    
 
     
   } else if (key==='s'){
@@ -65,7 +65,7 @@ function keyTyped() {
 
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
-  fill(random(25),random(555),random(255));
+  fill(random(25),random(-10000,10000),random(255));
  // clear();
   ellipse(random(500),random(700), 25,25);
   
