@@ -65,14 +65,15 @@ function keyTyped() {
 
 // The code inside the draw function will run OVER AND OVER again
 function draw() {
+  noStroke();
   if (key === 'c') {
     // Play the snare drum sound file
     hihat.play();
     
   
-  fill(random(25),random(-10000,10000),random(255));
+  fill(random(25),random(-5,500),random(255));
  // clear();
-  ellipse(random(500),random(700), 25,25);
+  ellipse(random(500),random(500), 25,25);
   
   // You could also draw something here if you want :)
 
